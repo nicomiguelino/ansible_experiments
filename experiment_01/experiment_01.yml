@@ -1,0 +1,5 @@
+- hosts: 127.0.0.1
+  tasks:
+    - name: Print a hello message
+      debug:
+        msg: "Hello World!"
