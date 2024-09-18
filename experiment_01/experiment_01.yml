@@ -12,9 +12,9 @@
       when: ansible_architecture == "x86_64"
     - name: Print a message exclusive to arm64 hosts
       debug:
-        msg: "This message is only for arm64 hosts"
-      when: ansible_architecture == "arm64"
-    - name: Print a message exclusive to armhf hosts
+        msg: "This message is only for aaarch64 hosts"
+      when: ansible_architecture == "aarch64"
+    - name: Print a message exclusive to armv7l hosts
       debug:
-        msg: "This message is only for armhf hosts"
-      when: ansible_architecture == "armhf"
+        msg: "This message is only for armv7l hosts"
+      when: ansible_architecture == "armv7l"
