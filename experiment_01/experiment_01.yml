@@ -3,3 +3,6 @@
     - name: Print a hello message
       debug:
         msg: "Hello World!"
+    - name: Print out hosts architecture
+      debug:
+        msg: "Host architecture is {{ ansible_architecture }}"
